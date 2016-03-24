@@ -1,4 +1,4 @@
-/* build: `node build.js modules=ALL exclude=gestures requirejs minifier=uglifyjs` */
+/* build: `node build.js modules=ALL exclude=gestures minifier=uglifyjs` */
 /*! Fabric.js Copyright 2008-2015, Printio (Juriy Zaytsev, Maxim Chernyak) */
 
 var fabric = fabric || { version: "1.6.0-rc.1" };
@@ -25074,13 +25074,4 @@ fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.protot
   }
 
 })();
-
-
-/* Footer for requirejs AMD support */
-
-window.fabric = fabric;
-
-if (typeof define === 'function' && define.amd) {
-  define([], function() { return fabric });
-}
 
