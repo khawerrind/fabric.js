@@ -19825,6 +19825,11 @@ fabric.Image.filters.BaseFilter = fabric.util.createClass(/** @lends fabric.Imag
             data[i + 1] = g * tg / 255;
             data[i + 2] = b * tb / 255;
             break;
+          case 'multiplyx2':
+            data[i] = (r * 2) * tr / 255;
+            data[i + 1] = (g * 2) * tg / 255;
+            data[i + 2] = (b * 2) * tb / 255;
+            break;
           case 'screen':
             data[i] = 1 - (1 - r) * (1 - tr);
             data[i + 1] = 1 - (1 - g) * (1 - tg);
